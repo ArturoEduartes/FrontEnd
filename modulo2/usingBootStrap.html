@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <br>
+    <h1>Hola Mundo Bootstrap!!</h1>
+    <div class="container text-capitalize text-bg-info">
+        <div class="row">
+            <div class="col-4 border border-dark">column 1</div>
+            <div class="col-8 border border-dark">column 2</div>
+        </div>
+    </div>
+
+    <div class="container text-capitalize text-bg-info">
+        <table class="table">
+            <thead>
+                <tr class="table-primary">
+                    <th scope="col">Nro</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                </tr>
+            </thead>
+            <tbody class="table-success">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>maximiliano</td>
+                    <td>guerra</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>erik</td>
+                    <td>thomas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="table">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">Nro</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+            </tr>
+        </thead>
+        <tbody class="table-success">
+            <tr>
+                <th scope="row">1</th>
+                <td>Maximiliano</td>
+                <td>Guerra</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Erik</td>
+                <td>Thomas</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container text-capitalize">
+        <form>
+            <div class="mb-3">
+                <label for="idE" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="idE" aria-describedby="idEH" />
+                <div id="idEH" class="form-text">Debe ser un correo válido</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label for="exampleCheck1" class="form-check-label">Recordarme</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <br />
+    <div class="alert alert-primary" role="alert">
+        a simple primary alert-check it out!
+    </div>
+    <button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-secondary">Secondary</button><button type="button" class="btn btn-check">Check</button><button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-info">Info</button><button type="button" class="btn btn-light">Light</button><button type="button" class="btn btn-warning">Warning</button><button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-outline-success"></button>
+
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled" aria-disabled="true" tabindex="-1">Link</a>
+        </li>
+    </ul>
+    <div class="container text-capitalize">
+        <nav class="nav flex-column">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+            <a href="#" class="nav-link">Link</a>
+            <a href="#" class="nav-link">Link</a>
+            <a href="#" class="nav-link disabled" aria-disabled="true" tabindex="-1">Disabled</a>
+        </nav>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+    </div>
+    <br>
+    <h2 id="using"></h2>
+    <h3 id="content"></h3>
+
+    <script language="javascript" type="text/javascript">
+        let elemTitle = document.getElementById("using");
+        let elemContent = document.getElementById("content");
+        elemTitle.textContent = "Hola Mundo! Usando Javascript";
+
+        document.write("Hola Mundo! <br> Usando Javascript");
+
+        let i = 0;
+        do {
+            i = i + 1;
+            continue;
+            document.write("<br> Do while en curso " + i);
+        } while (i < 5);
+        document.write("<br> Do while finalizado");
+
+        let arreglo = [10, 11, 3, 20, 5];
+        document.write("<br><br> Usando Array.filter() <br>Total elementos ", arreglo);
+        let mayoresADiez = arreglo.filter(element => element > 10);
+        document.write("<br> Mayor a diez ", mayoresADiez);
+
+        document.write("<br><br>Usando Array.find()");
+        mayoresADiez = arreglo.find(element => element > 10);
+        document.write("<br> primer elemento Mayor o igual a diez ", mayoresADiez);
+
+        document.write("<br><br>Usando Array.includes()");
+        let incluyeVeinte = arreglo.includes(20);
+        document.write("<br> Elemento 20 Incluido? ", incluyeVeinte); // resultado esperado: true
+
+        document.write("<br><br>Usando Array.indexOf()");
+        let indiceDeTres = arreglo.indexOf(3);
+        document.write("<br> Indice de 3? ", indiceDeTres); // resultado esperado: 2
+
+        document.write("<br><br>Usando Array.sort()");
+        arreglo.sort();
+        document.write("<br> Arreglo Ordenado ", arreglo); // Ordenado 10,11,20,3,5
+
+        document.write("<br><br>Usando Array.sort((a, b) => a - b) con funcion de ordenamiento inline ");
+        arreglo.sort((a, b) => a - b);
+        document.write("<br> Arreglo Ordenado ", arreglo); // Ordenado 3,5,10,11,20
+
+        document.write("<br><br>Usando Array.sort(function (a,b){return b - a}) con expresion de funcion de ordenamiento");
+        arreglo.sort(function(a, b) {
+            return b - a;
+        });
+        document.write("<br> Arreglo Ordenado ", arreglo); // Ordenado 20,11,10,5,3
+    </script>
+
+    <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <br>
+    <br>
+</body>
+
+</html>
